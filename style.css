@@ -1,0 +1,72 @@
+
+header h1 {
+    background-color: red;
+    padding: 30px 0 30px 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;  /* make text 'bold' */
+    letter-spacing: -1px;  /* changing the spacing between letters */
+    text-shadow: 3px 2px #555;/* adding some depth to the title */
+	
+}
+
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 5px 5px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 100px 12px 12px 200px;
+}
+
+#button {
+  font-size: 16px;
+}
+
+#tblData {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 0 0 100px 200px;
+
+}
+
+#tblData th {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+
+#tblData td {
+  text-align: center;
+  padding: 8px;
+}
+
+#tblData tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#tblData tr:nth-child(even){background-color: #f2f2f2;}
+
+#tblData tr.header, #tblData tr:hover {
+  background-color: #f1f1f1;
+}
+
+footer {/*styling the footer*/
+    clear: both; /* change back to vertical flow (default) */
+    padding: 5px;
+    text-align:center;
+    background-image: url('copyright.png');
+    background-position: 675px 25px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: black;
+	color: #fff;
+	
+}

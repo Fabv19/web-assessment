@@ -27,15 +27,14 @@ foreach($array as $row){
  '". $row["body"]. "')";
  $connect->exec($sql2);
 
- 
-echo "Posts Data Inserted";
 }//Close foreach
 
+     echo "Posts Data Inserted Successfully";
 }//Close try
 
 catch(PDOException $e){
 
-    echo "Error: " . $e->getMessage();
+    echo "Error: Title is required or Body exceeding 400 characters" . $e->getMessage();
     }
 
 try {
@@ -55,14 +54,14 @@ foreach($array as $row){
  $connect->exec($sql2);
 
  
-echo "Posts1 Data Inserted";
-}//Close foreach
 
+}//Close foreach
+echo "Posts1 Data Inserted";
 }//Close try
 
 catch(PDOException $e){
 
-    echo "Error: " . $e->getMessage();
+    echo "Error: Title is required or Body exceeding 400 characters " . $e->getMessage();
     }
 
 try {
@@ -82,14 +81,14 @@ foreach($array as $row){
  $connect->exec($sql2);
 
  
-echo "Posts/1/comments Data Inserted";
-}//Close foreach
 
+}//Close foreach
+echo "Posts/1/comments Data Inserted";
 }//Close try
 
 catch(PDOException $e){
 
-    echo "Error: " . $e->getMessage();
+    echo "Error: Title is required or Body exceeding 400 characters" . $e->getMessage();
     }
 
 $conn = null;
